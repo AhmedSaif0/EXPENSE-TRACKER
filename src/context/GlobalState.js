@@ -1,10 +1,10 @@
 import { createContext, useReducer} from "react";
 // import Appreduser from "../context/Appreduser"
 import AddTransaction from '../components/AddTransaction'
-import Balance from '../components/Balance'
 import IncomeExpenses from '../components/IncomeExpenses'
 import TransactionList from '../components/TransactionList'
 import Header from "../components/Header";
+import Balance from "../components/Balance";
 
 
 const Appreduser = (state, action) => {
@@ -17,7 +17,6 @@ const Appreduser = (state, action) => {
 
         return {
             transactions:[ action.payload , ...state.transactions,  ]
-            // ...state, transactions: state.transactions : { id: Date.now(), text: action.payload },
         }
      default:
          return state;
@@ -27,10 +26,10 @@ const Appreduser = (state, action) => {
 //initial state 
 const initialState = {
   transactions : [  
-{ id: 1, text: 'Flower', amount: -20 },
-  { id: 2, text: 'Salary', amount: 3000 },
-  { id: 3, text: 'Book', amount: -10 },
-  { id: 4, text: 'Camera', amount: 150 }
+{ id: 1, text: 'Flower', amount: -50 },
+  { id: 2, text: 'Salary', amount: 5000 },
+  { id: 3, text: 'Book', amount: -300 },
+  { id: 4, text: 'Camera', amount: -770 }
 ]
 }
 
@@ -38,7 +37,7 @@ const initialState = {
 export const GloabalContext = createContext(initialState)
 
 // provider component
-export const Globalprovider = ({Balance}) => {
+export const Globalprovider = () => {
     const [state, dispatch] = useReducer(Appreduser, initialState)
 
     const deleteTrans  = (id) => {
@@ -53,7 +52,7 @@ export const Globalprovider = ({Balance}) => {
         transactions:state.transactions, deleteTrans, addTrans,
         }}>
       <Header/>
-      <Balance />
+      <Balance/>
       <IncomeExpenses />
       <TransactionList/>
       <AddTransaction />

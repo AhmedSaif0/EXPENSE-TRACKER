@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>
+    <div style={{ fontWeight: 'bold', fontSize: '30px'}}>
       EXPENSE TRACKER
     </div>
   )
