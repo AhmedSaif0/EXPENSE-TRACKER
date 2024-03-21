@@ -6,20 +6,24 @@ import IncomeExpenses from './components/IncomeExpenses'
 import TransactionList from './components/TransactionList'
 import AddTransaction from './components/AddTransaction'
 import {Globalprovider } from './context/GlobalState'
+import Antdesign from "./components/Appss"
 
 
 const App = () => {
   
   return (
- <Globalprovider>
-     <Header/>
     <div className='container'>
+
+ <Globalprovider>
+  <Antdesign />
+     <Header/>
      <Balance />
      <IncomeExpenses />
      <TransactionList/>
      <AddTransaction />
-    </div>
   </Globalprovider>
+  </div>
+
   )
 }
 
