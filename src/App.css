@@ -9,7 +9,7 @@
     width: 100%;
 }
   
-  body {
+  /* body {
     background-color: #f7f7f7;
     display: flex;
     align-items: center;
@@ -18,8 +18,8 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
   }
-  
-  .container {
+   */
+  /* .container {
     margin: 30px auto;
     width: 100%;
     display: flex;
@@ -27,7 +27,19 @@
     gap: 50px;
     align-content: center;
     align-items: flex-start;
-  }
+  } */
+
+  .card-body {
+    flex: 1 1 auto;
+    display: flex;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
   
   h1 {
     letter-spacing: 1px;
@@ -59,7 +71,7 @@
     text-align: center;
   }
   
-  .inc-exp-container > div:first-of-type {
+  .border-r{
     border-right: 1px solid #dedede;
   }
   
@@ -71,6 +83,12 @@
   
   .money.plus {
     color: #2ecc71;
+  }
+  .plus {
+    color: #2ecc71;
+  }
+  .minus {
+    color: #c0392b;
   }
   
   .money.minus {

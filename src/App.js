@@ -12,16 +12,13 @@ import Antdesign from "./components/Appss"
 const App = () => {
   
   return (
-    <div className='container'>
-
- <Globalprovider>
-  <Antdesign />
-     <Header/>
-     <Balance />
-     <IncomeExpenses />
-     <TransactionList/>
-     <AddTransaction />
-  </Globalprovider>
+  <div className='container'>
+      <Globalprovider>
+          <Balance />
+          <IncomeExpenses />
+          <TransactionList/>
+          <AddTransaction />
+      </Globalprovider>
   </div>
 
   )

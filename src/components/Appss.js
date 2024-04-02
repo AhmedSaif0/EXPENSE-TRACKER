@@ -5,7 +5,6 @@ import { Card, Col, Row, Statistic } from 'antd';
 const Appss = () => {
     return(
         <>
-        <h1>Hellllo</h1>
   <Row gutter={16}>
     <Col span={12}>
       <Card bordered={false}>

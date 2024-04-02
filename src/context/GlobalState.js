@@ -5,6 +5,7 @@ import IncomeExpenses from '../components/IncomeExpenses'
 import TransactionList from '../components/TransactionList'
 import Header from "../components/Header";
 import Balance from "../components/Balance";
+import Appss from "../components/Appss";
 
 
 const Appreduser = (state, action) => {
@@ -51,8 +52,9 @@ export const Globalprovider = () => {
     return<GloabalContext.Provider value={{
         transactions:state.transactions, deleteTrans, addTrans,
         }}>
-      <Header/>
+      {/* <Header/> */}
       <Balance/>
+      {/* <Appss /> */}
       <IncomeExpenses />
       <TransactionList/>
       <AddTransaction />
