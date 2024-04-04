@@ -4,6 +4,8 @@ import IncomeEXpensesComp from '../components/IncomeEXpensesComp';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Balance from './Balance';
+
 
 const IncomeExpenses = () => {
   const { transactions } = useContext(GloabalContext);
@@ -39,9 +41,10 @@ const IncomeExpenses = () => {
         ) : (
           // Render as rows for other widths
           <>
-              <IncomeEXpensesComp color='plus' type='Total Income' balanceAmount={income} />
-              <IncomeEXpensesComp color='minus' type='Total expense' balanceAmount={expense}/>
-              <IncomeEXpensesComp type='Total expense' balanceAmount={expense}  />
+              <IncomeEXpensesComp color='plus' type='Income' balanceAmount={income} />
+              <IncomeEXpensesComp color='minus' type='expense' balanceAmount={expense}/>
+              <IncomeEXpensesComp color='total'  type='Total Transaction' balanceAmount={<Balance />}/>
+
           </>
         )}
       </Card.Body>

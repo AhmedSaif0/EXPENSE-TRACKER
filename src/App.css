@@ -28,7 +28,7 @@
     align-content: center;
     align-items: flex-start;
   } */
-
+  /* style={background:#198754} */
   .card-body {
     flex: 1 1 auto;
     display: flex;
@@ -81,19 +81,45 @@
     margin: 5px 0;
   }
   
-  .money.plus {
+  /* .money.plus {
     color: #2ecc71;
-  }
+  } */
   .plus {
-    color: #2ecc71;
+    color: #43936c;
+
   }
   .minus {
-    color: #c0392b;
+    color: #cb3a31;
+
   }
-  
-  .money.minus {
-    color: #c0392b;
+  .total {
+    color: black;
+
   }
+  .arr-right{
+    background-color: #fff4f2;
+    font-size: 5.5rem;
+    color: #cb3a31;
+    border: 3px solid #f7dad9;
+    border-radius: 15px;
+  }
+  .arr-left{
+    background-color: #f7f7f7;
+    font-size: 5.5rem;
+    color: #43936c;
+    border: 3px solid #c9e5d8;
+    border-radius: 15px;
+  }
+  .arr-total{
+    background-color: #f9f5ff;
+    font-size: 5.5rem;
+    color: #7f56d9;
+    border: 3px solid #e0ccfc;
+    border-radius: 15px;
+  }
+  /* .money.minus {
+    color: #c0392b;
+  } */
   
   label {
     display: inline-block;
