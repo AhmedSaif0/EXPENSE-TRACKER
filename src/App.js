@@ -12,13 +12,15 @@ import Antdesign from "./components/Appss"
 const App = () => {
   
   return (
-  <div className='container'>
-      <Globalprovider>
+  <div className='container d-flex justify-content-center p-2 pt-3'>
+    <div className='appdiv'>
+      <Globalprovider >
           <Balance />
           <IncomeExpenses />
           <TransactionList/>
           <AddTransaction />
       </Globalprovider>
+      </div>
   </div>
 
   )

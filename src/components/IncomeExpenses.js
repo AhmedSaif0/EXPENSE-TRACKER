@@ -22,20 +22,19 @@ const IncomeExpenses = () => {
     .toFixed(2);
 
   return (
-    <Card>
-      <Card.Header>Quote</Card.Header>
-      <Card.Body>
-        {/* Apply conditional rendering for column layout */}
+    <Card  className='mt-5 col-11 col-xs-12' >
+      <Card.Header as="h5">Expense Tracker</Card.Header>
+      <Card.Body >
         {window.innerWidth >= 320 && window.innerWidth <= 920 ? (
           <Row>
-            <Col>
-              <IncomeEXpensesComp  type='Total Income' balanceAmount={income} />
+            <Col className='justify-content-sm-start'>
+            <IncomeEXpensesComp color='plus' type='Income' balanceAmount={income} />
             </Col>
-            <Col>
-              <IncomeEXpensesComp  type='Total expense' balanceAmount={expense}/>
+            <Col className='justify-content-sm-start'>
+            <IncomeEXpensesComp color='minus' type='expense' balanceAmount={expense}/>
             </Col>
-            <Col>
-              <IncomeEXpensesComp type='Total expense' balanceAmount={expense}  />
+            <Col className='justify-content-sm-start'>
+            <IncomeEXpensesComp color='total'  type='Total ' balanceAmount={<Balance />}/>
             </Col>
           </Row>
         ) : (
@@ -43,7 +42,7 @@ const IncomeExpenses = () => {
           <>
               <IncomeEXpensesComp color='plus' type='Income' balanceAmount={income} />
               <IncomeEXpensesComp color='minus' type='expense' balanceAmount={expense}/>
-              <IncomeEXpensesComp color='total'  type='Total Transaction' balanceAmount={<Balance />}/>
+              <IncomeEXpensesComp color='total'  type='Total ' balanceAmount={<Balance />}/>
 
           </>
         )}

@@ -52,9 +52,6 @@ export const Globalprovider = () => {
     return<GloabalContext.Provider value={{
         transactions:state.transactions, deleteTrans, addTrans,
         }}>
-      {/* <Header/> */}
-      <Balance/>
-      {/* <Appss /> */}
       <IncomeExpenses />
       <TransactionList/>
       <AddTransaction />
