@@ -1,11 +1,8 @@
 import { createContext, useReducer} from "react";
-// import Appreduser from "../context/Appreduser"
 import AddTransaction from '../components/AddTransaction'
 import IncomeExpenses from '../components/IncomeExpenses'
 import TransactionList from '../components/TransactionList'
-import Header from "../components/Header";
-import Balance from "../components/Balance";
-import Appss from "../components/Appss";
+
 
 
 const Appreduser = (state, action) => {

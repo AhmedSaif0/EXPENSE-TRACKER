@@ -5,7 +5,6 @@ import { BiBarChartSquare } from "react-icons/bi";
 
 
 import '../App.css'
-import Balance from './Balance';
 
 
  const IncomeEXpensesComp = ({type,balanceAmount,color,total}) => {
